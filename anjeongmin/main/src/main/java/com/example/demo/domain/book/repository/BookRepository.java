@@ -1,6 +1,6 @@
-package com.example.jpaexample.repository;
+package com.example.demo.domain.book.repository;
 
-import com.example.jpaexample.domain.Book;
+import com.example.demo.domain.book.domain.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

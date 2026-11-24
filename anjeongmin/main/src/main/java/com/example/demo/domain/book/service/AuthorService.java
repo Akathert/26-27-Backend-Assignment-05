@@ -1,9 +1,9 @@
-package com.example.jpaexample.service;
+package com.example.demo.domain.book.service;
 
-import com.example.jpaexample.domain.Author;
-import com.example.jpaexample.dto.AuthorInfoResponseDto;
-import com.example.jpaexample.dto.AuthorSaveRequestDto;
-import com.example.jpaexample.repository.AuthorRepository;
+import com.example.demo.domain.book.domain.Author;
+import com.example.demo.domain.book.dto.AuthorInfoResponseDto;
+import com.example.demo.domain.book.dto.AuthorSaveRequestDto;
+import com.example.demo.domain.book.repository.AuthorRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

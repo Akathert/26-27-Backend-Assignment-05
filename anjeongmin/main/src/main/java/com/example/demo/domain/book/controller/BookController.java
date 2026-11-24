@@ -1,8 +1,8 @@
-package com.example.jpaexample.controller;
+package com.example.demo.domain.book.controller;
 
-import com.example.jpaexample.dto.BookInfoResponseDto;
-import com.example.jpaexample.dto.BookSaveRequestDto;
-import com.example.jpaexample.service.BookService;
+import com.example.demo.domain.book.dto.BookInfoResponseDto;
+import com.example.demo.domain.book.dto.BookSaveRequestDto;
+import com.example.demo.domain.book.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

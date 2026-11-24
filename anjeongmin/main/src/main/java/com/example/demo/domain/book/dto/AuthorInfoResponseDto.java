@@ -1,6 +1,6 @@
-package com.example.jpaexample.dto;
+package com.example.demo.domain.book.dto;
 
-import com.example.jpaexample.domain.Author;
+import com.example.demo.domain.book.domain.Author;
 import lombok.Builder;
 
 import java.util.List;

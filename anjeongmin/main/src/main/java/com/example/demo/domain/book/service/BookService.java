@@ -1,11 +1,11 @@
-package com.example.jpaexample.service;
+package com.example.demo.domain.book.service;
 
-import com.example.jpaexample.domain.Author;
-import com.example.jpaexample.domain.Book;
-import com.example.jpaexample.dto.BookInfoResponseDto;
-import com.example.jpaexample.dto.BookSaveRequestDto;
-import com.example.jpaexample.repository.AuthorRepository;
-import com.example.jpaexample.repository.BookRepository;
+import com.example.demo.domain.book.domain.Author;
+import com.example.demo.domain.book.domain.Book;
+import com.example.demo.domain.book.dto.BookInfoResponseDto;
+import com.example.demo.domain.book.dto.BookSaveRequestDto;
+import com.example.demo.domain.book.repository.AuthorRepository;
+import com.example.demo.domain.book.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

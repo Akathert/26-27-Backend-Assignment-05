@@ -1,4 +1,4 @@
-package com.example.jpaexample.domain;
+package com.example.demo.domain.book.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

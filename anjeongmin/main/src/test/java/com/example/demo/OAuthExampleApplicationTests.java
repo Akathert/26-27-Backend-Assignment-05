@@ -8,6 +8,8 @@ import com.example.demo.domain.auth.service.AuthService.GoogleUserInfo;
 import com.example.demo.domain.post.repository.PostRepository;
 import com.example.demo.domain.user.entity.User;
 import com.example.demo.domain.user.repository.UserRepository;
+import com.example.demo.domain.book.repository.AuthorRepository;
+import com.example.demo.domain.book.repository.BookRepository;
 import java.net.URI;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
@@ -48,7 +50,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
         "jwt.access-token-expiration=600000",
         "jwt.refresh-token-expiration=3600000",
         "google.oauth.client-id=practice-client",
-        "google.oauth.client-secret=practice-secret"
+        "google.oauth.client-secret=practice-secret",
+        "google.oauth.redirect-uri=http://localhost:8080/api/oauth2/callback/google" // 테스트용 임시주소
 })
 class OAuthExampleApplicationTests {
 
@@ -69,6 +72,12 @@ class OAuthExampleApplicationTests {
 
     @MockitoBean
     private PostRepository postRepository;
+    // 작가, 책 Repository를 테스트용 모의 객체로 등록
+    @MockitoBean
+    private AuthorRepository authorRepository;
+
+    @MockitoBean
+    private BookRepository bookRepository;
 
     @Test
     void googleCallbackRequiresMatchingSingleUseState() throws Exception {
